@@ -1,0 +1,104 @@
+.my-orders {
+    padding: 40px 8%;
+    min-height: 80vh;
+    background-color: #f9f9f9;
+}
+
+.my-orders h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Each Order Card */
+.my-orders-order {
+    display: grid;
+    grid-template-columns: 60px 2fr 1fr 1fr 1fr auto;
+    align-items: center;
+    gap: 15px;
+
+    background: #ffffff;
+    padding: 18px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.my-orders-order:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.my-orders-order img {
+    width: 45px;
+}
+
+.my-orders-order p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.my-orders-order b {
+    font-weight: 600;
+    color: #222;
+}
+
+/* Status dot */
+.my-orders-order span {
+    color: #28a745; /* green dot */
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/* Button */
+.my-orders-order button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff4c24;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.my-orders-order button:hover {
+    background-color: #e63e19;
+}
+/* ========================= */
+/* 📱 Mobile View */
+/* ========================= */
+@media (max-width: 600px) {
+
+    .my-orders {
+        padding: 30px 5%;
+    }
+
+    .my-orders-order {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .my-orders-order img {
+        width: 35px;
+    }
+
+    .my-orders-order p {
+        font-size: 13px;
+    }
+
+    .my-orders-order button {
+        width: 100%;
+        text-align: center;
+    }
+}

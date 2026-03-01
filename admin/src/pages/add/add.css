@@ -1,0 +1,111 @@
+/* Main container */
+.add {
+  flex: 1;
+  padding: 40px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Form layout */
+.add form {
+  max-width: 700px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  gap: 20px;
+}
+
+/* Flex column helper */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Upload section */
+.add-image-upload img {
+  width: 150px;
+  cursor: pointer;
+  border: 2px dashed #d1d5db;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.add-image-upload img:hover {
+  border-color: #3b82f6;
+}
+
+/* Input fields */
+.add input,
+.add textarea,
+.add select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.add input:focus,
+.add textarea:focus,
+.add select:focus {
+  border-color: #3b82f6;
+}
+
+/* Category + price row */
+.add-category-price {
+  display: flex;
+  gap: 20px;
+}
+
+.add-category,
+.add-price {
+  flex: 1;
+}
+
+/* Button */
+.add-button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-button:hover {
+  background-color: #2563eb;
+}
+
+
+@media (max-width: 768px) {
+  .add {
+    padding: 20px;
+  }
+
+  .add form {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .add-category-price {
+    flex-direction: column;
+  }
+
+  .add input,
+  .add textarea,
+  .add select {
+    font-size: 13px;
+  }
+
+  .add-button {
+    width: 100%;
+  }
+}

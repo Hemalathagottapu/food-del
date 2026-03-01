@@ -1,0 +1,26 @@
+.verify {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+}
+
+.spinner {
+    width: 70px;
+    height: 70px;
+    border: 8px solid #e0e0e0;
+    border-top: 8px solid #ff4c24; /* theme color */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Smooth rotation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

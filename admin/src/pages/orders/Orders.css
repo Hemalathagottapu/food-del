@@ -1,0 +1,114 @@
+.order {
+    width: 100%;
+    padding: 30px 5%;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+}
+
+.order h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Order Card */
+.order-item {
+    display: grid;
+    grid-template-columns: 60px 2fr 1fr 1fr auto;
+    gap: 20px;
+    align-items: center;
+
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.order-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.order-item img {
+    width: 50px;
+}
+
+.order-item-food {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.order-item-name {
+    font-weight: 600;
+}
+
+.order-item-address {
+    font-size: 13px;
+    color: #555;
+    margin: 6px 0;
+}
+
+.order-item-phone {
+    font-size: 14px;
+    color: #444;
+}
+
+/* Right side values */
+.order-item p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Dropdown */
+.order-item select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.order-item select:focus {
+    outline: none;
+    border-color: #ff4c24;
+}
+@media (max-width: 600px) {
+
+    .order {
+        padding: 20px;
+    }
+
+    .order-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .order-item img {
+        width: 35px;
+    }
+
+    .order-item-food {
+        font-size: 14px;
+    }
+
+    .order-item-address,
+    .order-item-phone {
+        font-size: 13px;
+    }
+
+    .order-item select {
+        width: 100%;
+        padding: 8px;
+    }
+
+}

@@ -1,0 +1,68 @@
+/* Container */
+.list {
+  flex: 1;
+  padding: 40px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Title */
+.list > p {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* Table Wrapper */
+.list-table {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Row Layout */
+.list-table-format {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 100px 80px;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f1f1f1;
+  gap: 10px;
+}
+
+/* Header Row */
+.list-table-format:first-child {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Image */
+.list-table-format img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Price */
+.list-table-format p {
+  margin: 0;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* Action Button */
+.list-table-format p:last-child {
+  color: #ef4444;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.list-table-format p:last-child:hover {
+  color: #dc2626;
+}

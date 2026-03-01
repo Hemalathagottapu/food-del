@@ -1,0 +1,103 @@
+.place-order {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  padding: 60px 8%;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* ================= LEFT SIDE ================= */
+
+.place-order-left {
+  flex: 2;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.place-order-left .title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.place-order-left input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.place-order-left input:focus {
+  border-color: #ff4d30;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 77, 48, 0.15);
+}
+
+.multi-fields {
+  display: flex;
+  gap: 20px;
+}
+
+.multi-fields input {
+  flex: 1;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.place-order-right {
+  flex: 1;
+}
+
+.cart-total- {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.cart-total- h2 {
+  margin-bottom: 20px;
+}
+
+.cart-total-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.cart-total- hr {
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.cart-total- button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cart-total- button:hover {
+  background: #333;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .place-order {
+    flex-direction: column;
+  }
+}
