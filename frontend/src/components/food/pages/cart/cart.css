@@ -167,9 +167,10 @@ button:hover{
 
 @media (max-width: 768px) {
 
-  /* .cart-items-title {
+   .cart-items-title {
     display: none; /* hide table header */
-   */
+   }
+   
 
   .cart-items-item {
     display: flex;
