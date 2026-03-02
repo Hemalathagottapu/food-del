@@ -4,19 +4,14 @@ import Stripe from "stripe";
 
 
 const stripe=new Stripe(process.env.STRIPE_SECRET_KEY)
+
 const placeOrder = async (req, res) => {
-    const frontend_url="https://food-del-frontend-mlhd.onrender.com"
-const placeOrder = async (req, res) => {
-    const frontend_url="https://food-del-frontend-mlhd.onrender.com"
+    const frontend_url = "https://food-del-frontend-mlhd.onrender.com";
+
     try {
         // Save order in DB
         const newOrder = new orderModel({
-            // userId: req.body.userId,"
-    try {
-        // Save order in DB
-        const newOrder = new orderModel({
-            // userId: req.body.userId,
-            userId:req.userId,
+            userId: req.userId,
             items: req.body.items,
             amount: req.body.amount,
             address: req.body.address,
@@ -34,7 +29,7 @@ const placeOrder = async (req, res) => {
                 product_data: {
                     name: item.name,
                 },
-                unit_amount: item.price * 100, // Stripe needs paise
+                unit_amount: item.price * 100,
             },
             quantity: item.quantity,
         }));
@@ -46,7 +41,7 @@ const placeOrder = async (req, res) => {
                 product_data: {
                     name: "Delivery Charges",
                 },
-                unit_amount: 20 * 100, // ₹20 delivery
+                unit_amount: 20 * 100,
             },
             quantity: 1,
         });
