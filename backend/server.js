@@ -17,8 +17,8 @@ app.use(express.json())
 // app.use(cors())
 app.use(cors({
   origin: [
-    "https://food-del-frontend-mlhd.onrender.com",
-    "https://food-del-admin-lvzd.onrender.com"
+    "https://food-del-frontend1-njqh.onrender.com",
+    "https://food-del-admin1-qxlu.onrender.com/list"
   ],
   credentials: true
 }))
